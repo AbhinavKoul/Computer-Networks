@@ -28,8 +28,11 @@ void main()
  
         switch (ch)
         {
+
+
+            
         case 1: 
-            printf("\nEnter value to be inserted : ");
+            printf("\nEnter value to be inserted  : ");
             scanf("%d",&n);
             insert_by_priority(n);
             break;

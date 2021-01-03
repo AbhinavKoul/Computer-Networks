@@ -1,3 +1,6 @@
+/*
+Link : https://towardsdatascience.com/diffie-hellman-key-exchange-f673d617137
+*/
 #include <stdio.h>
 
 // Function to compute a^m mod n
@@ -13,6 +16,7 @@ int compute(int a, int m, int n)
 		// fast exponention
 		if (r == 1)
 			y = (y*a) % n;
+			
 		a = a*a % n;
 
 		m = m / 2;

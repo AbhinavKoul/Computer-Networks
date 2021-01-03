@@ -2,7 +2,8 @@
  
 int main()
 {
-    int w,i,f,frames[50];
+    int w,i,f;
+    int frames[50]; //contains all the frames to be transmitted
  
     printf("Enter window size: ");
     scanf("%d",&w);
@@ -18,9 +19,9 @@ int main()
     printf("\nWith sliding window protocol the frames will be sent in the following manner (assuming no corruption of frames)\n\n");
     printf("After sending %d frames at each stage sender waits for acknowledgement sent by the receiver\n\n",w);
  
-    for(i=1;i<=f;i++)
+    for(i=1;i<=f;i++)   //loop for all values in the frame
     {
-        if(i%w==0)
+        if(i%w==0)  // window size complete b
         {
             printf("%d\n",frames[i]);
             printf("Acknowledgement of above frames sent is received by sender\n\n");
@@ -29,7 +30,7 @@ int main()
             printf("%d ",frames[i]);
     }
  
-    if(f%w!=0)
+    if(f%w!=0)  //if last frames is less than window size
         printf("\nAcknowledgement of above frames sent is received by sender\n");
  
     return 0;

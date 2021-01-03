@@ -1,6 +1,17 @@
+/*
+https://www.geeksforgeeks.org/rsa-algorithm-cryptography/
+*/
 #include<stdio.h>
 #include<math.h>
  
+//bestttttttttttt
+int gcd(int a,int b)
+{
+    if (b == 0)
+        return a;
+
+   return gcd(b, a % b);
+}
 //to find gcd
 int gcd(int a, int h)
 {
@@ -29,12 +40,13 @@ int main()
     double e=2;
  
     //for checking co-prime which satisfies e>1
-    while(e<totient){
-    count = gcd(e,totient);
-    if(count==1)
-        break;
-    else
-        e++;
+    while(e<totient)
+    {
+        count = gcd(e,totient);
+        if(count==1)
+            break;
+        else
+            e++;
     }
  
     //private key

@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "unordered_map": "cpp",
+        "iostream": "cpp",
+        "vector": "cpp",
+        "xstring": "cpp",
+        "algorithm": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Enabled",
+    "python.linting.enabled": true
+}
