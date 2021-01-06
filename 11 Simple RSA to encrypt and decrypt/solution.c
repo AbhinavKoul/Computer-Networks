@@ -12,19 +12,20 @@ int gcd(int a,int b)
 
    return gcd(b, a % b);
 }
+
 //to find gcd
-int gcd(int a, int h)
-{
-    int temp;
-    while(1)
-    {
-        temp = a%h;
-        if(temp==0)
-        return h;
-        a = h;
-        h = temp;
-    }
-}
+// int gcd(int a, int h)
+// {
+//     int temp;
+//     while(1)
+//     {
+//         temp = a%h;
+//         if(temp==0)
+//         return h;
+//         a = h;
+//         h = temp;
+//     }
+// }
  
 int main()
 {

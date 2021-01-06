@@ -138,11 +138,12 @@ void display_pqueue()
         return;
     }
  
+ 
+    front = 0;
     for (; front <= rear; front++)
     {
         printf(" %d ", pri_que[front]);
     }
- 
-    front = 0;
+
 }
 

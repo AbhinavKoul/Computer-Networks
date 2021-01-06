@@ -15,11 +15,11 @@ void dijkstra(int n,int source,int cost[10][10],int dist[10],int visited[10])
     {
       min=99;
 
-      for(w=1;w<=n;w++)
+      for(w=1;w<=n;w++) //FIND MINIMUM 1ST CONNECTED NOTE
         if(!visited[w] && dist[w]<min)
         {
           min=dist[w];
-          u=w;
+          u = w;
         }  
 
       visited[u]=1;
@@ -46,7 +46,7 @@ void main()
           scanf("%d",&cost[i][j]);
 
           if(cost[i][j]==0)
-            cost[i][j]=infinity;
+            cost[i][j]=infinity;  
         }
             
 
